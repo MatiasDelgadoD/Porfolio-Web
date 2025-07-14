@@ -2,6 +2,7 @@
   "build": {
     "env": {
       "NPM_CONFIG_OPTIONAL": "false"
-    }
+    },
+    "installCommand": "pnpm install --ignore-optional"
   }
 }
