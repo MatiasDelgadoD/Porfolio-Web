@@ -3,13 +3,9 @@ import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/badge.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import LinkedingIcon from "../icon/Linkeding.astro";
-import SocialPillIcon from "../icon/SocialPill.astro";
-import GithubIcon from "../icon/Github.astro";
-import MailIcon from "../icon/Mail.astro";
+import SocialsItems from "../components/SocialsItems.astro";
 import Experience from "../components/Experience.astro";
 import BriefcaseIcon from "../icon/Briefcase.astro";
-import Whatsapp from "../icon/Whatsapp.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -19,8 +15,8 @@ import Whatsapp from "../icon/Whatsapp.astro";
   title="Portfolio Web de Matias  |  Desarrollador Web y Diseño Web ..."
   description="Matias Damian Delgado + Desarrollador Web y Diseño Web en Buenos Aires, Argentina. Conoce más sobre mi y mi trabajo."
 >
-  <main class="px-4">
-    <SectionContainer class="py-44 pb-24">
+  <main class="w-fit max-w-screen-xl mx-auto">
+    <SectionContainer class="my-8" id="element">
       <img
         src="https://lh3.googleusercontent.com/a/ACg8ocJEbYCjBwIzf0sHv4KIzKYRooko1yJtiqDAJTmGd_uNtqe98w7i=s288-c-no"
         class="rounded-full size-14 mb-4"
@@ -35,31 +31,14 @@ import Whatsapp from "../icon/Whatsapp.astro";
         </a>
       </h1>
       <h2 class="text-white text-xl opacity-80">
-        I´m a web developer❗, I´m passionate about technology💻 and I´m always
-        looking for new challenges. <span class="opacity-80">
+        I ´ m a web developer❗, I ´ m passionate about technology💻 and I´m
+        always looking for new challenges. <span class="opacity-80">
           I from Argentina, Buenos Aires
-        </span> and I´m currently studying <span class="text-blue-100/90"
+        </span> and I ´ m currently studying <span class="text-blue-100/90"
           >systems engineer
         </span>
       </h2>
-      <nav class="flex gap-x-2 mt-8">
-        <SocialPillIcon href="https://www.linkedin.com/in/matiasdamiandelgado/">
-          <LinkedingIcon class="size-6" />
-          <span class="text-gray-400/60">Linkedin</span>
-        </SocialPillIcon>
-        <SocialPillIcon href="https://github.com/MatiasDelgadoD">
-          <GithubIcon class="size-6" />
-          <span class="text-gray-400/60">Github</span>
-        </SocialPillIcon>
-        <SocialPillIcon href="mailto:matiasdamian@hotmail.es">
-          <MailIcon class="size-6" />
-          <span class="text-gray-400/60">matiasdamian@hotmail.es</span>
-        </SocialPillIcon>
-        <SocialPillIcon href="https://wa.me/+5491138578047">
-          <Whatsapp class="size-6" />
-          <span class="text-gray-400/60">+54 9 01138578047</span>
-        </SocialPillIcon>
-      </nav>
+      <SocialsItems />
     </SectionContainer>
     <SectionContainer id="experiencie">
       <h2
